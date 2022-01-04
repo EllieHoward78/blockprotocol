@@ -11,13 +11,19 @@ The public-facing [blockprotocol.org](https://blockprotocol.org) website serves 
 
 ### `POST /api/sendLoginCode`
 
-#### Request Body
+Request Body:
 
-`email`: the email address associated with the BP account
+- `email`: the email address associated with the BP user
 
-#### Response Body
+Response Body:
 
-`userId`: the id of the user associated with the email address
+- `userId`: the id of the BP user
+
+### `POST /api/loginWithLoginCode`
+
+Request Body:
+
+- `userId`: the id of the BP user
 
 ## Local development
 
